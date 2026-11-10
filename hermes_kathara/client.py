@@ -99,3 +99,4 @@ class KatharaClient:
         if contents:
             return contents[0].get("text", "")
         return ""
+

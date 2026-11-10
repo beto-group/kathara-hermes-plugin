@@ -26,3 +26,4 @@ kathara-demo = "scripts.demo_circuit:main"
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["hermes_kathara*"]
+

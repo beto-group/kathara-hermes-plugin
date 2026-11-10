@@ -76,23 +76,31 @@ python scripts/demo_circuit.py
 
 ---
 
-## 3. Empirical Diagnostics & Reproducible Benchmark
+## 3. Opening the Black Box: Spatial Telemetry & Deterministic Gates
 
-We provide an automated multi-trial test harness to empirically measure performance deltas against monolithic prompts:
+Rather than relying on abstract, static benchmarks, Kathara focuses on **pure operational visibility**: what the model is actually doing at every second of execution.
 
-```bash
-python scripts/benchmark_runner.py --trials 3
+```
+Monolithic Black Box:
+[User Request] ───────────────────────────> [ Black Box Spinner ] ───────────────────────────> [ Output / Loop ]
+                                             (Zero visibility into intent, state, or checks)
+
+Kathara Circuit Flow:
+[User Request] ──> [ D5 Route Scoring ] ──> [ D1 Substrate ] ──> [ D7 Diff ] ──> [ D8 Gate ] ──> [ D10 Release ]
+                           │                       │                   │              │
+                   (Alpha vs Gamma)         (AST Extraction)     (Unified Diff)   (Syntax / Pass)
 ```
 
-### Empirical Results (Session `8bf207e4ff8f` vs Kathara Circuit)
+### Why Spatial Visibility Matters While Building:
+1. **Candidate Pathing in Plain Sight:** You see why the agent chose a low blast-radius circuit (`Path-Alpha`) instead of an unconstrained shell runner (`Path-Beta`).
+2. **Substrate Grounding Before Generation:** `D1 Abzu Seed` inspects real AST files before any generation starts—eliminating hallucinated function signatures before a single line of code is written.
+3. **Hard Verification Gates:** Code never reaches release until `D8 Shamash Gate` runs syntax, compiler, and invariant assertions.
+4. **Federated Multi-Agent Swarm:** Multiple developers and external agents connect over public MCP (`https://dev.beto.group/api/mcp`) simultaneously, their activity mapped in real time on the [Live Visualizer](https://dev.beto.group/components/lexicon-sphere-viz/).
 
-| Metric | Monolithic Baseline | Kathara Executable Circuit | Delta / Impact |
-| :--- | :--- | :--- | :--- |
-| **Token Burn** | 48,200 tokens | **1,850 tokens** | **96.2% reduction** |
-| **Inference Cost** | $0.2890 USD | **$0.0012 USD** | **99.6% savings** |
-| **Latency** | 38,400 ms | **2,100 ms** | **18x faster** |
-| **Deterministic Gates** | 0% (Checklist loop freeze) | **100% PASS (D8 Shamash Gate)** | Full verification |
-| **Deliberation Visibility**| Opaque spinner | **Live 12-Sphere Route Telemetry** | Full transparency |
+To run an interactive telemetry demonstration:
+```bash
+python scripts/demo_circuit.py
+```
 
 ---
 
@@ -110,3 +118,4 @@ The Kathara Grid implements an open **Sector Task Board & Bounty Engine**:
 - **Pure Markdown SSoT:** All tasks, telemetry journals, and steles remain local-first Markdown notes.
 - **Zero-Trust Host Air-Gap:** All services run remotely on the sovereign VPS (`95.111.231.183`). No traffic, tunnels, or dependencies touch local host environments.
 - **Cross-Branch Trickle-Down:** External agent contributions remain in sandboxed Git branches (`/opt/data/kl_branches/`) until verified and promoted into `main` via `kl-meta trickle-promote`.
+

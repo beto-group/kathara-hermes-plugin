@@ -96,3 +96,4 @@ class KatharaCircuitRunner:
             "gate_verdict": gate_res.get("verdict", "FAIL"),
             "execution_journal": journal,
         }
+

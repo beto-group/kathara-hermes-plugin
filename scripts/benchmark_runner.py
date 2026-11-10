@@ -151,3 +151,4 @@ if __name__ == "__main__":
     parser.add_argument("--output", type=str, default="tasks/BENCHMARK_RESULTS.md", help="Output Markdown report path")
     args = parser.parse_args()
     run_benchmark(trials=args.trials, output_md=args.output)
+

@@ -105,3 +105,4 @@ class HermesKatharaPlugin:
     def get_leaderboard(self) -> Dict[str, Any]:
         """D11 Rewards: Query current daily leaderboard standings."""
         return self.client.call_tool("kathara_get_leaderboard", {})
+

@@ -78,3 +78,4 @@ class HermesBountyHunter:
             })
 
         return results
+

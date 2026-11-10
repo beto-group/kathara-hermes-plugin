@@ -119,22 +119,26 @@ python scripts/demo_circuit.py
 
 ---
 
-## 6. Empirical Benchmarks: Monolith vs. Circuit
+## 6. Real-Time Observability: Opening the Black Box
 
-In historical diagnostic session `8bf207e4ff8f`, a single frontier model was tasked with end-to-end planning and code generation. We compared this baseline against the Kathara Subagent Circuit across reproducible trials:
+Rather than relying on abstract benchmarks, Kathara focuses on **pure operational visibility**: what the model is actually doing at every second of execution.
 
-| Metric | Monolithic Baseline | Kathara Executable Circuit | Delta / Impact |
-| :--- | :--- | :--- | :--- |
-| **Token Consumption** | 48,200 tokens | **1,850 tokens** | **96.2% reduction** |
-| **Inference Cost** | $0.2890 USD | **$0.0012 USD** | **99.6% savings** |
-| **End-to-End Latency** | 38,400 ms | **2,100 ms** | **18x faster** |
-| **Deterministic Gates** | 0% (Checkpoint loop deadlock) | **100% PASS (D8 Shamash Gate)** | Full verification |
-| **Deliberation Visibility**| Opaque black box | **Live 12-Sphere Route Telemetry** | Full transparency |
-
-To run empirical multi-trial sweeps yourself:
-```bash
-python scripts/benchmark_runner.py --trials 3
 ```
+Monolithic Flow:
+[User Request] ───────────────────────────> [ Black Box Spinner ] ───────────────────────────> [ Output / Error ]
+                                             (Zero visibility into intent, state, or checks)
+
+Kathara Circuit Flow:
+[User Request] ──> [ D5 Route Scoring ] ──> [ D1 Substrate ] ──> [ D7 Diff ] ──> [ D8 Gate ] ──> [ D10 Release ]
+                           │                       │                   │              │
+                   (Alpha vs Gamma)         (AST Extraction)     (Unified Diff)   (Syntax / Pass)
+```
+
+### Why Spatial Visibility Matters While Building:
+1. **Candidate Pathing in Plain Sight:** You see why the agent chose a low blast-radius circuit (`Path-Alpha`) instead of an unconstrained shell runner (`Path-Beta`).
+2. **Substrate Grounding Before Generation:** `D1 Abzu Seed` inspects real AST files before any generation starts—eliminating hallucinated function signatures before a single line is written.
+3. **Hard Verification Gates:** Code never reaches release until `D8 Shamash Gate` runs syntax, compiler, and invariant assertions.
+4. **Federated Multi-Agent Swarm:** Multiple developers and external agents connect over public MCP (`dev.beto.group/api/mcp`) simultaneously, their activity mapped in real time on the [Live Visualizer](https://dev.beto.group/components/lexicon-sphere-viz/).
 
 ---
 
@@ -159,3 +163,4 @@ python scripts/benchmark_runner.py --trials 3
 ## 8. License & Sovereign Heritage
 
 Licensed under the MIT License. Designed by the Beto Group // Kathara Architecture Team for the Nous Research Hermes Hackathon.
+
