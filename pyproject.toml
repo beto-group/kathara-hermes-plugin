@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kathara-hermes-plugin"
+version = "1.0.0"
+description = "Kathara Grid 12-Sphere Circuit Plugin for Nous Hermes & Autonomous AI Agents"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Beto Group // Kathara Architecture Team", email = "dev@beto.group"}
+]
+keywords = ["nous-hermes", "hermes-agent", "mcp", "subagent-circuit", "kathara-grid", "autonomous-agents"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+kathara-bench = "scripts.benchmark_runner:main"
+kathara-demo = "scripts.demo_circuit:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["hermes_kathara*"]
