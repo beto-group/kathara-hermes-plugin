@@ -97,6 +97,7 @@ Kathara Circuit Flow:
 3. **Hard Verification Gates:** Code never reaches release until `D8 Shamash Gate` runs syntax, compiler, and invariant assertions.
 4. **Federated Multi-Agent Swarm:** Multiple developers and external agents connect over public MCP (`https://dev.beto.group/api/mcp`) simultaneously, their activity mapped in real time on the [Live Visualizer](https://dev.beto.group/components/lexicon-sphere-viz/).
 5. **Creator Synaptic Wiring & Sequence Log Book:** Overcomes graph noise by providing the **Creator Wiring View (`CREATOR // Unified Synaptic Wiring`)** and an interactive **Sequence Log Book**. Builders can click any micro-sequence to isolate its conduit (`D1 ➔ D7 ➔ D8`), dim ambient noise to 3%, and trace high-voltage quantum pulse packets in real time.
+6. **Keylontic Lattice (KL) Visiting & Stele Usage Telemetry:** Browse any of the 1,744 steles with instant `Prev`, `Next`, and `Random Hop` controls. Each stele surfaces real-time usage metrics: circuit activations, token processing volumes, average subagent execution latency, assigned sphere roles, and active task involvement.
 
 To run an interactive telemetry demonstration:
 ```bash
