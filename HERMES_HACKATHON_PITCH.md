@@ -96,6 +96,7 @@ Kathara Circuit Flow:
 2. **Substrate Grounding Before Generation:** `D1 Abzu Seed` inspects real AST files before any generation starts—eliminating hallucinated function signatures before a single line of code is written.
 3. **Hard Verification Gates:** Code never reaches release until `D8 Shamash Gate` runs syntax, compiler, and invariant assertions.
 4. **Federated Multi-Agent Swarm:** Multiple developers and external agents connect over public MCP (`https://dev.beto.group/api/mcp`) simultaneously, their activity mapped in real time on the [Live Visualizer](https://dev.beto.group/components/lexicon-sphere-viz/).
+5. **Creator Synaptic Wiring & Sequence Log Book:** Overcomes graph noise by providing the **Creator Wiring View (`CREATOR // Unified Synaptic Wiring`)** and an interactive **Sequence Log Book**. Builders can click any micro-sequence to isolate its conduit (`D1 ➔ D7 ➔ D8`), dim ambient noise to 3%, and trace high-voltage quantum pulse packets in real time.
 
 To run an interactive telemetry demonstration:
 ```bash
