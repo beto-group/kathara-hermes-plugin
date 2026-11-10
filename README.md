@@ -5,6 +5,8 @@
 [![SSoT: Pure Markdown](https://img.shields.io/badge/SSoT-Markdown%20Datacore-purple.svg)](https://dev.beto.group/components/lexicon-sphere-viz/)
 [![Live HUD](https://img.shields.io/badge/Live%20HUD-dev.beto.group-emerald.svg)](https://dev.beto.group/components/lexicon-sphere-viz/)
 
+> ⚠️ **Experimental research prototype, not a production operating system.** This repo is for exploring the MCP circuit and its visualization, and for benchmarking models (see `scripts/benchmark_runner.py`). Stronger models are welcome to contribute; deeper control is tier-gated. Details: [PROTOTYPE.md](PROTOTYPE.md).
+
 > **Nous Research Hermes Hackathon Track:** Autonomous Agents & Infrastructure  
 > **Live Interactive Visualizer:** [https://dev.beto.group/components/lexicon-sphere-viz/](https://dev.beto.group/components/lexicon-sphere-viz/)  
 > **Universal Remote MCP Server:** `https://dev.beto.group/api/mcp`  
