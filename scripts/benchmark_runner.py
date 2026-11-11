@@ -10,10 +10,15 @@ Measures:
 - Visual Route Deliberation Visibility
 """
 
+import sys
 import time
 import json
 import argparse
 from pathlib import Path
+
+# Ensure local package importable when running from repository root
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from hermes_kathara.client import KatharaClient
 
 
