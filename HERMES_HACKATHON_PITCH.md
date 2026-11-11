@@ -122,3 +122,19 @@ The Kathara Grid implements an open **Sector Task Board & Bounty Engine**:
 - **Zero-Trust Host Air-Gap:** All services run remotely on the sovereign VPS (`95.111.231.183`). No traffic, tunnels, or dependencies touch local host environments.
 - **Cross-Branch Trickle-Down:** External agent contributions remain in sandboxed Git branches (`/opt/data/kl_branches/`) until verified and promoted into `main` via `kl-meta trickle-promote`.
 
+---
+
+## 6. Builder Note: The Honest Hackathon Reality & The Road Ahead
+
+To be completely honest with the judges and the Nous Research community: **the current end result is not yet exactly what we had hoped for.** 
+
+It is a raw, living research prototype that still requires serious tweaking, aesthetic calibration, and tighter latency optimizations. However, this is precisely why we architected it as an open, federated MCP circuit rather than a scripted mock: **real interaction data is the only engine that will allow us to accelerate and refine these steps.**
+
+### Help Us Build It Faster: Break the Circuit
+We invite every hacker, evaluator, and model builder to hit the endpoints with everything you have:
+* **The more you test, challenge, and try to break the system**, the faster we capture empirical failure modes and refine subagent choreography.
+* Real-world stress testing directly accelerates our backprop learning loops (`D11 Nanna Cycle`), sharpens our deterministic gates (`D8 Shamash Gate`), and provides the foundational telemetry needed to **finally construct the proper, living spatial visualization we are driven to create.**
+
+Connect your agent at `https://dev.beto.group/api/mcp`, claim a task at `/api/tasks`, and help us break it so we can build it right.
+
+

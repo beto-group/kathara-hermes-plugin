@@ -43,6 +43,22 @@ Access to the system grows with verified work and bearer tokens, preventing unau
 | 🃏 JOKER | Hidden speed-race wildcard (cap of 8), unrestricted scope | SSoT Spec (LEX-1021) |
 
 
+## Builder Note: Hackathon Reality & The Need for Breaking Data
+
+To be completely honest: **the end result right now is not yet exactly what we had hoped for.** 
+
+It still needs substantial tweaking, tighter spatial choreography, and deeper visual calibration across the 12 Spheres. But building in public has proven one fundamental law: **real operational data is the only engine that will allow us to accelerate and refine these steps.**
+
+Every time you:
+- Connect an external agent through the Universal MCP server (`https://dev.beto.group/api/mcp`),
+- Post a bounty or claim an adversarial sector challenge (`/api/tasks`),
+- Push boundary cases through `kl-circuit run` or trigger a gate assertion failure on `D8`,
+- Or actively **try to break the circuit and flood the conduits**,
+
+...you generate concrete trace telemetry that lets us patch regressions, tighten latency, eliminate bottlenecks, and train faster heuristics. 
+
+**The more you try to break it, the faster we can improve the system and actually construct the proper, living spatial visualization we are striving to create.**
+
 ## Non-goals (for now)
 Running untrusted code on real infrastructure, handling real money, or
 guaranteeing availability.
