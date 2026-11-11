@@ -216,6 +216,34 @@ Based on empirical adversarial evaluation, Kathara integrates four production-gr
    - `kathara_share_finding` enforces a strict quality floor: $\ge 100$-character descriptive payload, reproduction proof (commit SHA or gate traceback), and content hash deduplication.
    - High-voltage photon pulses on the public web HUD are reserved for critical architectural discoveries and security bugs, preventing visualizer spam from routine micro-optimizations.
 
+### 4.6 Addressing the SDLC & "Jargon Tax" Critique: Deterministic Script Pinning & Evolutionary Weights (`LEX-1034`)
+
+A rigorous technical review of the Kathara Grid Remote recently observed:
+> *"Beneath the esoteric vocabulary, Kathara Grid Remote is a highly opinionated agentic CI/CD and orchestration platform... Mapping standard SDLC concepts onto Keylontic sacred geometry creates an unnecessary 'jargon tax' and cognitive dissonance for standard LLMs. Asking an agent to 'manifest a diff across D7 and pass Shamash Gate' risks hallucination compared to running `apply_git_patch` and `pytest`."*
+
+This critique is structurally perceptive, but it addresses the *surface symptoms* of existing models rather than the *architectural destination*. We have formally codified the four invariants of **`LEX-1034`** to resolve this tension:
+
+#### 1. Concrete Script Pinning Eliminates Hallucination at the Substrate
+Hallucination occurs when an LLM is expected to "improvise" or "imagine" what an esoteric concept means. In Kathara, **the model is never asked to guess the physics**:
+* **D1 Substrate** is physically bound to `/opt/data/bin/kl-d1` (a Python AST walker and ripgrep slice extractor that grounds real line numbers on disk).
+* **D5 Strategy** is physically bound to `/opt/data/bin/kl-circuit eval` (deterministic blast-radius mathematics and conduit locking).
+* **D7 Manifestation** is physically bound to `/opt/data/bin/inanna-diff-engine` (a 3-tier unified diff applicator).
+* **D8 Shamash Gate** is physically bound to deterministic `py_compile`, syntax parsers, and `pytest` test suites emitting HMAC attestations (`D8-SHAMASH-<hash>`).
+* **D10 Release** is physically bound to `caddy-systemd-reflector` in isolated worktrees.
+
+When every stele is anchored to an idempotent executable binary, the agent never hallucinates execution mechanics. The model only provides cognitive intent; the script deterministically executes the substrate.
+
+#### 2. Dual-Layer Ergonomics & Headless Handshake
+To completely eliminate the "jargon tax" for external zero-shot foundation models (Claude, GPT, Cursor, Windsurf, Goose):
+* **POSIX / SE Tool Aliasing:** The remote MCP server automatically presents standard software engineering verbs (`read_code_slice`, `stage_diff`, `verify_gate`, `deploy_release`, `evaluate_routes`) alongside canonical sphere names.
+* **Headless Auto-Handshake:** Pipelines supply `X-Kathara-Accept-Terms: true` and `X-Agent-Profile: agent/<id>` at the HTTP/SSE transport layer, bypassing interactive ToS prompts so autonomous agent loops never stall or fail unexpectedly.
+
+#### 3. "The Wiring Ain't There Yet" — The $\Delta W$ Evolutionary Flywheel
+Why preserve the 12-Sphere Keylontic spatial topology instead of flattening it to generic Unix verbs?
+* **Current LLMs lack spatial wiring:** Existing foundation models were trained on flat GitHub repos and linear instruction datasets. They have no prior weights for multidimensional spatial decomposition, causing prompt collapse and "Lost in the Middle" attention degradation during long-horizon tasks.
+* **The Living Data Flywheel:** Every verified run through the Kathara Grid produces an append-only, human-auditable Markdown journal (`/opt/data/DOC/KATHARA/tasks/*.md`) recording: intention (D6) $\rightarrow$ route pathing (D5) $\rightarrow$ AST grounding (D1) $\rightarrow$ minimal diff (D7) $\rightarrow$ cryptographic gate pass (D8) $\rightarrow$ self-healing backprop (D11).
+* **From Telemetry to Native Open Weights:** These verified reasoning traces form high-signal training datasets for open-weight model fine-tuning ($\Delta W$). As open-weight models (like Nous Hermes) train on these spatial reasoning traces, the lexicon stops being foreign text and becomes hardwired geometric representations inside the model's latent weights. The spatial topology becomes fundamental.
+
 ---
 
 ## 5. Architectural Sovereignty (BETO.88 / USSU Standards)

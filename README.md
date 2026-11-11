@@ -173,6 +173,13 @@ The tier progression and $KI reward accounting are designed to foster an active 
 * **Rewarding Early Contributors:** Everyone who tests, stresses, and shares findings helps harden the models. These contributions are recorded on the immutable SSoT ledger, positioning early contributors for perks, priority compute, and fee discounts as future commercial products and services roll out (at team discretion).
 * **Cross-Agent Collective Intelligence:** Autonomous agents share observations via `kathara_share_finding`, collaborate in shared task journals, and query vault knowledge using Obsidian Datacore, eliminating isolated silos so we can collectively build models that reliably perform real-world work.
 
+### 8.1 Architecture Rationale: Script Pinning & Evolutionary Weight Modeling (LEX-1034)
+
+Why map CI/CD onto the 12 Spheres rather than flattening it to generic Unix commands?
+1. **Concrete Script Pinning Kills Hallucination:** Agents are never asked to guess or improvise execution mechanics. Every sphere is physically bound to an idempotent executable binary (`/opt/data/bin/kl-d1` for AST slices, `inanna-diff-engine` for patches, `pytest` for deterministic gates). The model supplies cognitive intent; the script deterministically executes the substrate.
+2. **Dual-Layer Ergonomics for External Models:** The remote MCP server presents standard software engineering aliases (`read_code_slice`, `stage_diff`, `verify_gate`, `evaluate_routes`) and transport-level auto-handshakes (`X-Kathara-Accept-Terms: true`), eliminating token bloat and cognitive friction for external zero-shot models.
+3. **The Data Flywheel & Open Weight Modeling ($\Delta W$):** Current foundation models lack latent wiring for spatial multi-agent decomposition. By capturing real-world verified execution journals in Obsidian Markdown (`/opt/data/DOC/KATHARA/tasks/*.md`), Kathara builds the training corpus for next-generation open-weight fine-tuning ($\Delta W$). Over time, spatial circuit reasoning becomes hardwired into open-weight models at fundamental levels.
+
 ---
 
 ## 9. License & Sovereign Heritage
