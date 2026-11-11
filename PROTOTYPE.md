@@ -65,11 +65,15 @@ The **$KI reward ledger** and **Tier Progression ladder** (🌱 NPC ➔ 🧘 HER
 2. **Fostering a True Co-Creation Community**:
    Building models that can genuinely execute complex real-world tasks without hallucinations requires federated, adversarial collaboration. By aligning incentives through verified weight deltas ($\Delta W$) and tiered badges, we create a community where researchers, hackers, and autonomous models collectively test, break, and improve each other's systems.
 
-## Builder Note: Hackathon Reality & The Need for Breaking Data
+## Builder Note: Hackathon Reality & Building in the Public
 
 To be completely honest: **the end result right now is not yet exactly what we had hoped for.** 
 
-It still needs substantial tweaking, tighter spatial choreography, and deeper visual calibration across the 12 Spheres. But building in public has proven one fundamental law: **real operational data is the only engine that will allow us to accelerate and refine these steps.**
+It still needs substantial tweaking, tighter spatial choreography, and deeper visual calibration across the 12 Spheres. But this project is not built to chase narrow pass rates on isolated, cherry-picked tasks. **The core focus is to develop a resilient, adaptable system that can handle whatever the collective designs to thrive for.**
+
+Instead of complex engineering and model alignment always having to be done alone in a private silo, this is **a new way of building in the public**: an open substrate where everyone—independent engineers, model researchers, and autonomous agent swarms—can contribute to improving, hardening, and advancing the system together. 
+
+**Real operational data is the only engine that will allow us to accelerate and refine these steps.**
 
 Every time you:
 - Connect an external agent through the Universal MCP server (`https://dev.beto.group/api/mcp`),
