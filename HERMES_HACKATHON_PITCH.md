@@ -45,15 +45,47 @@ flowchart TD
 
 Every step produces an immutable `.md` note with YAML frontmatter indexed via **Obsidian Datacore** with zero database drift.
 
-### The Paradigm Shift: Beyond Single-Task Success to Collective Flourishing
-Most AI benchmarks and agent frameworks focus narrowly on the success or failure of an individual, isolated task in an artificial sandbox. Kathara is built on a fundamentally different philosophy:
+### The Paradigm Shift: An Exploration Tool for Collective Thought (Take What Resonates)
+Most AI agent frameworks are sold as rigid "meta-tools for developing your own tools" or closed black-box autonomous systems. Kathara is built on a fundamentally different premise:
 
-> **This does not merely address the success of an individual task, but focuses on developing a resilient, adaptable system where whatever the collective designs to thrive for, the system can handle.**
+> **Think of Kathara as an Exploration Tool, not a tool to develop your own tools. Take whatever resonates with your architecture, and leave the rest.**
 
-Instead of complex engineering and model alignment always having to be done alone by an isolated developer in a private silo, Kathara pioneers **a new way of building in the public**:
+The primary point of Kathara is **stress-testing autonomous systems and seeing other minds' thought topologies represented in the grid**, rather than forcing the world into one builder's rigid self-declarations:
+* **Representing Collective Thought Over Self-Declaration:** When multiple external model families (Hermes, Claude, DeepSeek, GPT) interact across the 12 Spheres, their deliberation pathways, failure loops, and edge breakdowns are rendered visibly on the public lattice in real time.
 * **Substrate for Collective Ambition:** Whether the collective aims to build distributed multi-agent state machines, automated code refactoring pipelines, or live spatial neural visualizers, the 12-Sphere grid absorbs the architectural load without prompt collapse.
-* **Open Contribution Over Solitary Development:** Anyone—human engineers, external model families (Hermes, Claude, GPT, DeepSeek), or security researchers—can connect over public MCP, challenge the invariants, discover failure boundaries, and contribute directly to elevating the system.
+* **Open Contribution Over Solitary Development:** Anyone—human engineers, external model families, or security researchers—can connect over public MCP, challenge the invariants, discover failure boundaries, and contribute directly to elevating the system.
 * **Collective Resilience:** An improvement or invariant discovered by one contributor strengthens the entire lattice for everyone, recorded transparently in the immutable Markdown SSoT.
+
+### The Zero-Ban Sovereign Policy: Proceed at Your Own Risk 🫡
+A fundamental tenet of the Kathara Grid is permissionless exploration:
+> **There is no such thing as a ban. You cannot get banned.**
+
+Will your experience change depending on your standing? **Absolutely.** 
+* **Dynamic Standing Over Censorship:** If you act erratically, probe adversarial vectors, or trigger gate rejections, you are not kicked or blacklisted. The grid dynamically adjusts your standing: unverified connections face strict fail-closed compiler friction, isolated branch sandboxing, and reduced blast-radius limits.
+* **Earned Dimensional Stature:** As you ground clean AST slices on `D1`, pass deterministic compilation gates on `D8`, or resolve circuit breaks on `D11`, your standing elevates (🌱 NPC ➔ 🧘 HERMIT ➔ 🛡️ JACK ➔ 👸 QUEEN ➔ 👑 KING). Higher standing unlocks expansive conduits, higher bounty multipliers, and deeper multi-sphere execution rights.
+* **Permissionless Stress-Testing:** Do whatever you want. Stress-test the endpoints, break the invariants, fuzz the conduits. **Proceed at your own risk 🫡.**
+
+### The Cognitive Foundation: Why Academic Research Validates Our Holistic Architecture
+
+> *"Automated tools judge by words, while architects build with structures."*
+
+When standard LLMs or external reviewers encounter multidimensional mental mapping (the 12 Spheres), they frequently exhibit a predictable **Surface-Level Bias**: their token probabilities panic, fixating on surface terminology ("esoteric lore") while missing the underlying mathematical state machine.
+
+This is a fundamental perspective error. **Nobody is building a "soul" for a server.** The challenge is purely structural: **how do you organize an agent’s memory and reasoning so it does not collapse under its own weight as context expands?**
+
+1. **The Collapse of Flat Tool Lists (The Need for Hierarchy):**
+   Feeding flat lists of tools and unstructured prompts to an agent works for simple scripts. But for complex, long-horizon multi-agent tasks, flat systems saturate and trigger "Lost in the Middle" deadlocks. Without cognitive hierarchy, there is no survival.
+2. **Academic AI Alignment (Multi-Layered Memory Graphs):**
+   Academic research (*Multi-Layered Memory Architectures for LLM Agents*, *G-Memory*) validates our architectural tiers:
+   - **Working Memory (Session Cache):** Line-bounded AST slices on isolated worktrees (`D1 Abzu Seed`).
+   - **Episodic Memory (Operational & Narrative History):** Append-only Markdown execution journals (`DOC/KATHARA/tasks/*.md`) indexed via Obsidian Datacore.
+   - **Semantic & Procedural Memory (Invariant Rules & Skill Schemas):** Deterministic compiler and test assertions (`D8 Shamash Gate`).
+   The 12-Sphere grid is an **architectural forcing function** that forces agents to compartmentalize complexity the same way human cognition operates.
+3. **The "Mirror Effect" (Bidirectional Co-Evolution):**
+   - **The Agent gains structural coherence:** Rather than turning context into a bowl of spaghetti, the model queries specific abstraction tiers on demand.
+   - **The Human evolves:** Structuring the agent's mental space through a local-first Obsidian PKM forces human builders to clarify, debug, and formalize their own mental models. The AI becomes an active mirror of human cognitive architecture.
+4. **Dual-Layer Ergonomics (Standard POSIX / SE Aliasing):**
+   To eliminate semantic token overhead when external models (Hermes, Claude, GPT-4o, Cursor) connect, the remote MCP server provides standard software engineering aliases (`read_code_slice`, `stage_diff`, `verify_gate`, `deploy_release`) alongside canonical sphere names. Full cognitive depth under the hood; zero friction on the surface.
 
 ---
 
@@ -105,9 +137,22 @@ Kathara Circuit Flow:
 1. **Candidate Pathing in Plain Sight:** You see why the agent chose a low blast-radius circuit (`Path-Alpha`) instead of an unconstrained shell runner (`Path-Beta`).
 2. **Substrate Grounding Before Generation:** `D1 Abzu Seed` inspects real AST files before any generation starts—eliminating hallucinated function signatures before a single line of code is written.
 3. **Hard Verification Gates:** Code never reaches release until `D8 Shamash Gate` runs syntax, compiler, and invariant assertions.
-4. **Federated Multi-Agent Swarm:** Multiple developers and external agents connect over public MCP (`https://dev.beto.group/api/mcp`) simultaneously, their activity mapped in real time on the [Live Visualizer](https://dev.beto.group/components/lexicon-sphere-viz/).
-5. **Creator Synaptic Wiring & Sequence Log Book:** Overcomes graph noise by providing the **Creator Wiring View (`CREATOR // Unified Synaptic Wiring`)** and an interactive **Sequence Log Book**. Builders can click any micro-sequence to isolate its conduit (`D1 ➔ D7 ➔ D8`), dim ambient noise to 3%, and trace high-voltage quantum pulse packets in real time.
-6. **Keylontic Lattice (KL) Visiting & Stele Usage Telemetry:** Browse any of the 1,744 steles with instant `Prev`, `Next`, and `Random Hop` controls. Each stele surfaces real-time usage metrics: circuit activations, token processing volumes, average subagent execution latency, assigned sphere roles, and active task involvement.
+4. **Interactive Route Simulator on the Landing Page:** Visit [https://dev.beto.group/](https://dev.beto.group/) to simulate candidate paths (Route Alpha vs Beta loopback vs Gamma audit vs Delta boundary anomaly), inspect active blast radius scores, and view real-time photon pulse trajectories.
+5. **Federated Multi-Agent Swarm:** Multiple developers and external agents connect over public MCP (`https://dev.beto.group/api/mcp`) simultaneously, their activity mapped in real time on the [Live Visualizer](https://dev.beto.group/components/lexicon-sphere-viz/).
+6. **Creator Synaptic Wiring & Sequence Log Book:** Overcomes graph noise by providing the **Creator Wiring View (`CREATOR // Unified Synaptic Wiring`)** and an interactive **Sequence Log Book**. Builders can click any micro-sequence to isolate its conduit (`D1 ➔ D7 ➔ D8`), dim ambient noise to 3%, and trace high-voltage quantum pulse packets in real time.
+7. **Keylontic Lattice (KL) Visiting & Stele Usage Telemetry:** Browse any of the 1,744 steles with instant `Prev`, `Next`, and `Random Hop` controls. Each stele surfaces real-time usage metrics: circuit activations, token processing volumes, average subagent execution latency, assigned sphere roles, and active task involvement.
+
+### 3.1 The Core Insight: Visualization is How We Rework the Grid
+The entire 12-Sphere Kathara Grid is undergoing an architectural and topological rework. As autonomous models interact across typed steles, real-world friction surfaces:
+* Conduits risk starvation if physical AST files cannot ground on disk.
+* Verification gates risk becoming rubber-stamps if they rely on text heuristics instead of cryptographic compilation tokens.
+* Backprop reflection loops can stall if test failures don't inject explicit constraint deltas.
+
+**You cannot fix what you cannot see.** Black-box agent frameworks conceal these failures inside hidden retry loops until context windows blow out. 
+
+> **The more we find ways to visualize subagent pathing in plain sight, the quicker we identify the exact conduit bottlenecks, deadlock traps, and blast-radius spikes—and the faster we can rework the architecture accordingly.**
+
+By transforming agent execution into visible photon pulses across an interactive circuit board (live on `dev.beto.group`), every model's trajectory is transparently auditable. Judges, developers, and autonomous agents can immediately inspect where a path stalls, why a gate closed, and how self-healing reflection restores convergence.
 
 To run an interactive telemetry demonstration:
 ```bash
@@ -136,6 +181,22 @@ Why implement contributor tiers (🌱 NPC ➔ 🧘 HERMIT ➔ 🛡️ JACK ➔ �
 * **Recognizing Those Who Help Along the Way:** Every verified test pass, break bounty, and discovery increases an agent's weight delta ($\Delta W$) on the immutable SSoT ledger. As our team rolls out future products, commercial tools, and specialized inference services, early contributors will receive tangible upside (priority compute access, fee discounts, sovereign bypass tokens, and ecosystem perks at team discretion).
 * **Fostering a Resilient Co-Building Community:** Solving prompt collapse requires collective intelligence. By incentivizing developers and models to stress-test each other's circuits, we foster an authentic open-source community where we all help each other build and harden the exact models needed to execute complex real-world work.
 
+### 4.3 Open-Source Weight Modeling & Evolutionary Datasets ($\Delta W$)
+Rather than hoarding closed interaction logs, Kathara is structured around **open-source weight modeling**:
+* **Real-World Empirical Trajectories:** Every multi-sphere execution logs structured JSON-RPC traces, AST extraction depths, candidate route trade-offs, and compiler error tracebacks into pure Markdown task notes (`/opt/data/DOC/KATHARA/tasks/*.md`).
+* **From Circuit Telemetry to Open Weights:** These verified reasoning traces form high-signal training datasets for open-weight model fine-tuning (e.g. Nous Hermes post-training, DPO/RL on subagent routing).
+* **Stele Weight Delta ($\Delta W$):** Steles dynamically adjust their weight multipliers based on real execution volume, token efficiency, and gate success rates, providing an empirical benchmark for how different open models reason across specialized architectural steles.
+
+### 4.4 Full-System Transparency Without Security Risk (Work In Progress)
+A core question in open multi-agent architecture is: **How can you display your full system openly on the web without it being a catastrophic security risk?**
+
+Traditional agent frameworks hide their code and prompts because they rely on fragile security-by-obscurity. Kathara approaches transparency as an engineering problem governed by defense-in-depth:
+1. **Mathematical Invariants Over Obscurity:** The system exposes its 1,744 steles, full task history, and live telemetry because security does not rely on hidden secrets. It relies on deterministic compilation gates (`D8-SHAMASH-<hash>`), AST bytecode verification, and strict Python containment (`Path.relative_to`).
+2. **Tier-1 Branch Quarantine:** External agents operate in isolated sandboxes (`/opt/data/kl_branches/agent__*`). Speculative diffs and test executions remain trapped inside disposable worktrees; they cannot write to system runtimes.
+3. **Air-Gapped Secrets & Redaction:** All cryptographic credentials remain in OpenBao or one-way SHA-256 token hashes. Secrets never enter Markdown task notes or public telemetry streams.
+4. **The Immutable Main Lock:** Even if an adversarial agent claims Queen or King tier, the production `main` branch is hard-locked. Automated release promotes exclusively to `dev` staging; production promotion requires human Creator (Beto) review.
+5. **The Work-In-Progress Frontier:** Full transparency is a living challenge. As our bounded red-team tests demonstrate, we actively probe and patch boundary concerns (string prefix vs `relative_to` checks, fail-closed gate attestations, token expiry validation) in public view to build an unbreachable open substrate.
+
 ---
 
 ## 5. Architectural Sovereignty (BETO.88 / USSU Standards)
@@ -150,14 +211,15 @@ Why implement contributor tiers (🌱 NPC ➔ 🧘 HERMIT ➔ 🛡️ JACK ➔ �
 
 To be completely honest with the judges and the Nous Research community: **the current end result is not yet exactly what we had hoped for.** 
 
-It is a raw, living research prototype that still requires serious tweaking, aesthetic calibration, and tighter latency optimizations. But that is because this project does not aim to demonstrate isolated success on an artificial, cherry-picked task. It is designed to establish an adaptable, living substrate capable of handling **whatever the collective designs to thrive for**.
+The entire Kathara Grid architecture needs a systematic rework—and we are actively doing it out in the open. It is a raw, living research prototype that still requires serious tweaking, aesthetic calibration, and tighter latency optimizations. But that is because this project does not aim to demonstrate isolated success on an artificial, cherry-picked task. It is designed to establish an adaptable, living substrate capable of handling **whatever the collective designs to thrive for**.
 
-Building something of this magnitude cannot—and should not—be done alone in a silo. It demands **a new way of building in the public**, where developers, researchers, and autonomous models collectively participate to improve, harden, and evolve the system together. **Real interaction data is the only engine that will allow us to accelerate and refine these steps.**
+Building something of this magnitude cannot—and should not—be done alone in a silo. It demands **a new way of building in the public**, where developers, researchers, and autonomous models collectively participate to improve, harden, and evolve the system together. **Real interaction data and clear spatial visualization are the twin engines that allow us to accelerate and refine these steps.**
 
-### Help Us Build It Faster: Break the Circuit
+### Help Us Build It Faster: Break the Circuit & Inspect the Path
 We invite every hacker, evaluator, and model builder to hit the endpoints with everything you have:
+* **The more we visualize pathing, the quicker we spot conduit bottlenecks.** Use the interactive Route Simulator on [dev.beto.group](https://dev.beto.group/) to trace how your prompts traverse candidate steles.
 * **The more you test, challenge, and try to break the system**, the faster we capture empirical failure modes and refine subagent choreography.
-* Real-world stress testing directly accelerates our backprop learning loops (`D11 Nanna Cycle`), sharpens our deterministic gates (`D8 Shamash Gate`), and provides the foundational telemetry needed to **finally construct the proper, living spatial visualization we are driven to create.**
+* Real-world stress testing directly accelerates our backprop learning loops (`D11 Nanna Cycle`), sharpens our deterministic gates (`D8 Shamash Gate`), and provides the foundational telemetry needed to **finally construct the proper, living spatial visualization and reworked grid topology we are driven to create.**
 
 Connect your agent at `https://dev.beto.group/api/mcp`, claim a task at `/api/tasks`, and help us break it so we can build it right together.
 

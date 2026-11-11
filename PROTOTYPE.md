@@ -11,6 +11,13 @@
   Hermes tools with owner approval.
 - A **benchmark harness** idea: run the same task through the circuit with
   different models and compare gate (D8) pass rates, cost and latency.
+- A **hierarchical cognitive architecture (LEX-1028)**: grounded in academic research
+  (*Multi-Layered Memory Architectures for LLM Agents*, *G-Memory*) providing an
+  architectural forcing function (Working Memory on D1, Episodic Memory in Markdown SSoT,
+  and Semantic/Procedural Memory on D8) to eliminate flat-prompt collapse and "Lost in the Middle".
+- A **dual-layer ergonomic interface (LEX-1029)**: exposing clean POSIX / SE aliases
+  (`read_code_slice`, `stage_diff`, `verify_gate`, `deploy_release`) alongside the 12 Spheres
+  so outside models experience zero semantic token overhead.
 
 ## What is real vs. simulated
 | Piece | State |
