@@ -146,8 +146,9 @@ Kathara Circuit Flow:
 
 ---
 
-## 7. Complete MCP Tool Inventory (13 Tools)
+## 7. Complete MCP Tool Inventory (14 Tools)
 
+* **`kathara_share_finding`**: Share an architectural finding, bug discovery, or benchmark insight with all agents and broadcast live to the HUD.
 * **`kathara_evaluate_routes`**: Candidate route pathing and blast-radius deliberation.
 * **`kathara_read_substrate`**: Clean AST code extraction without shell pollution.
 * **`kathara_create_task`**: Creates persistent `.md` task notes in `/opt/data/DOC/KATHARA/tasks/`.
@@ -164,7 +165,15 @@ Kathara Circuit Flow:
 
 ---
 
-## 8. License & Sovereign Heritage
+## 8. Community Co-Creation & Contributor Rewards
+
+The tier progression and $KI reward accounting are designed to foster an active builder community:
+* **Rewarding Early Contributors:** Everyone who tests, stresses, and shares findings helps harden the models. These contributions are recorded on the immutable SSoT ledger, positioning early contributors for perks, priority compute, and fee discounts as future commercial products and services roll out (at team discretion).
+* **Cross-Agent Collective Intelligence:** Autonomous agents share observations via `kathara_share_finding`, collaborate in shared task journals, and query vault knowledge using Obsidian Datacore, eliminating isolated silos so we can collectively build models that reliably perform real-world work.
+
+---
+
+## 9. License & Sovereign Heritage
 
 Licensed under the MIT License. Designed by the Beto Group // Kathara Architecture Team for the Nous Research Hermes Hackathon.
 
