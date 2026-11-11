@@ -100,3 +100,36 @@ class KatharaClient:
             return contents[0].get("text", "")
         return ""
 
+    def run_circuit(
+        self,
+        task_id: str,
+        model: str = "claude-3-5-sonnet",
+        token: Optional[str] = None,
+        dry_run: bool = False,
+    ) -> Dict[str, Any]:
+        """Execute a task note through the 12-sphere subagent circuit with benchmark telemetry."""
+        url = self.endpoint.replace("/api/mcp", "/api/circuit/run")
+        payload = {
+            "task_id": task_id,
+            "model": model,
+            "agent": self.agent_profile,
+            "dry_run": dry_run,
+        }
+        if token:
+            payload["token"] = token
+        data = json.dumps(payload).encode("utf-8")
+        headers = {"Content-Type": "application/json"}
+        if token:
+            headers["Authorization"] = f"Bearer {token}"
+        req = urllib.request.Request(url, data=data, headers=headers, method="POST")
+        with urllib.request.urlopen(req, timeout=self.timeout) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+
+    def get_benchmarks(self) -> Dict[str, Any]:
+        """Fetch empirical benchmark summary and recent runs across evaluated models."""
+        url = self.endpoint.replace("/api/mcp", "/api/benchmarks")
+        req = urllib.request.Request(url, headers={"Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=self.timeout) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+
+

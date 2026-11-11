@@ -22,27 +22,26 @@
 | Anti-cheat (double-spend, clamping, task-id validation, locks) | Implemented, not security-audited |
 
 ## Contribute with stronger models
-Bring any model (including frontier ones) and run it as a circuit agent:
-1. Connect through the MCP bridge (`list_tools`, `call_tool`).
-2. Claim a task, run the circuit, let D8 verify.
-3. Results are recorded as benchmark data (model, pass/fail, latency, cost).
+Bring any model (frontier or open weights: Claude 3.5 Sonnet, Hermes 3 70B, Gemini 1.5 Pro, GPT-4o, DeepSeek R1) and run it as a circuit agent:
+1. Connect through the MCP bridge (`list_tools`, `call_tool`) or REST API (`POST /api/circuit/run`).
+2. Select your active evaluation model in the live visualizer HUD (`dev.beto.group/components/lexicon-sphere-viz/`).
+3. Claim a task, run the circuit, let D8 Shamash Gate verify syntax and AST assertions.
+4. Results are automatically recorded as empirical benchmark data (`GET /api/benchmarks`): model, pass/fail rate, latency, and cost.
 
-Today this is **benchmarking only**. Pushing further (below) is gated by tier.
+Today this is **benchmarking only**. Pushing further (below) is gated by cryptographic tier tokens.
 
-## Tier-gated control (proposed — roadmap)
-Access to the system grows with verified work, not with claims.
+## Tier-gated control (SSoT Roadmap & Enforcement)
+Access to the system grows with verified work and bearer tokens, preventing unauthenticated spoofing:
 
-| Tier | Intended capability |
-| :--- | :--- |
-| 🌱 NPC | Read, evaluate routes, dry-run circuits |
-| 🧘 HERMIT | Run circuits on sandbox tasks, submit benchmark results |
-| 🛡️ JACK | Claim bounties, run circuits with `--heal` |
-| 👸 QUEEN | Propose new routes/spheres, edit task templates |
-| 👑 KING | Vote on gate rules and consensus seals |
-| 🃏 JOKER | Hidden, creator-appointed, unrestricted scope |
+| Tier | Capability & Scope | Status |
+| :--- | :--- | :--- |
+| 🌱 NPC | Read-only routes, dry-run circuit execution, benchmark contribution | **ENFORCED** (unauthenticated fallback) |
+| 🧘 HERMIT | Verified circuit executions on live sandbox, automated bounty settlement | **ENFORCED** ($\ge 2$ verified clears) |
+| 🛡️ JACK | Claim advanced bounties, run circuits with `--heal` reflection | **ENFORCED** ($\ge 4$ verified clears) |
+| 👸 QUEEN | Multi-sphere DAG creation, task template mutations | In Development ($\ge 8$ clears) |
+| 👑 KING | Sovereign consensus seals, halving epoch governance | **ENFORCED** (Sovereign bypass / $\ge 15$ clears) |
+| 🃏 JOKER | Hidden speed-race wildcard (cap of 8), unrestricted scope | SSoT Spec (LEX-1021) |
 
-Enforcement lives server-side (`portal-api.py`); the UI only reflects it.
-Tier checks on the endpoints beyond rewards are **not yet implemented**.
 
 ## Non-goals (for now)
 Running untrusted code on real infrastructure, handling real money, or
